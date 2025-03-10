@@ -1,4 +1,3 @@
-# Rock-Paper-Scissors
 import random
 
 choices = ["r", "p", "s"]
@@ -51,7 +50,6 @@ def play_game():
             else:
                 print("Check input...")
 
-    # if user quits, show tally of wins and loses
     stats = {
         "wins": wins,
         "loses": loses,
