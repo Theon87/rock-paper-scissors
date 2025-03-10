@@ -5,31 +5,40 @@ choices = ["r", "p", "s"]
 
 
 def play_game():
+    wins = 0
+    loses = 0
+    ties = 0
 
     is_playing = True
 
     while is_playing:
-        # get user choice
+
+        print("-----------------------------------------------")
         user_choice = input(
             "Enter rock(r), paper(p), or scissors(s): ").lower()
-        # randomly generate computer choice
+
         computer_choice = random.choice(choices)
-        # compare user choice to computer choice
+
         print(f"Player: '{user_choice}'")
         print(f"Computer: '{computer_choice}'")
-        # determine winner
+
         if user_choice == computer_choice:
+            ties += 1
             print("Tie")
         elif user_choice == "r" and computer_choice == "p":
+            loses += 1
             print("You lose.")
         elif user_choice == "p" and computer_choice == "s":
+            loses += 1
             print("You lose.")
         elif user_choice == "s" and computer_choice == "r":
+            loses += 1
             print("You lose.")
         else:
+            wins += 1
             print("You win!")
-        # prompt user to play again
 
+        print("-----------------------------------------------")
         while True:
             play_again = input("Play again? yes(y) or no(n): ")
 
@@ -41,7 +50,15 @@ def play_game():
                 break
             else:
                 print("Check input...")
-        # if user quits, show tally of wins and loses
+
+    # if user quits, show tally of wins and loses
+    stats = {
+        "wins": wins,
+        "loses": loses,
+        "ties": ties
+    }
+
+    print(stats)
 
 
 if __name__ == "__main__":
