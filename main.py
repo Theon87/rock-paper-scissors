@@ -29,12 +29,18 @@ def play_game():
         else:
             print("You win!")
         # prompt user to play again
-        play_again = input("Play again? yes(y) or no(n): ")
 
-        if play_again == "y":
-            is_playing = True
-        else:
-            is_playing = False
+        while True:
+            play_again = input("Play again? yes(y) or no(n): ")
+
+            if play_again == "y":
+                is_playing = True
+                break
+            elif play_again == "n":
+                is_playing = False
+                break
+            else:
+                print("Check input...")
         # if user quits, show tally of wins and loses
 
 
