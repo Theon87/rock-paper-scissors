@@ -12,7 +12,7 @@ def play_game():
 
     while is_playing:
 
-        print("-----------------------------------------------")
+        print("===============================================")
         user_choice = input(
             "Enter rock(r), paper(p), or scissors(s): ").lower()
 
@@ -33,11 +33,23 @@ def play_game():
         elif user_choice == "s" and computer_choice == "r":
             loses += 1
             print("You lose.")
-        else:
+        elif user_choice == "p" and computer_choice == "r":
             wins += 1
             print("You win!")
+        elif user_choice == "s" and computer_choice == "p":
+            wins += 1
+            print("You win!")
+        elif user_choice == "r" and computer_choice == "s":
+            wins += 1
+            print("You win!")
+        else:
+            print("----------------------------")
+            print("No result.")
+            print("Please check your input...")
+            print("Only enter 'r', 'p', or 's'.")
+            print("----------------------------")
+            continue
 
-        print("-----------------------------------------------")
         while True:
             play_again = input("Play again? yes(y) or no(n): ")
 
