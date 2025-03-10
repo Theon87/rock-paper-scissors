@@ -1,19 +1,22 @@
 # Rock-Paper-Scissors
 import random
 
+choices = ["r", "p", "s"]
+
 
 def play_game():
-    choices = ["r", "p", "s"]
-    # get user choice
 
     is_playing = True
 
     while is_playing:
+        # get user choice
         user_choice = input(
             "Enter rock(r), paper(p), or scissors(s): ").lower()
         # randomly generate computer choice
         computer_choice = random.choice(choices)
         # compare user choice to computer choice
+        print(f"Player: '{user_choice}'")
+        print(f"Computer: '{computer_choice}'")
         # determine winner
         if user_choice == computer_choice:
             print("Tie")
