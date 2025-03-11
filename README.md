@@ -4,13 +4,9 @@
 
 A text-based game built using python and played in the terminal. This simple traditional game allows the user to play against the computer until they quit. After the user quits the game, a tally of wins, loses, and ties will be shown.
 
-## Installation
+## Installation and Usage
 
-This is python project. After cloning the repository, run the program in the terminal.
-
-## Usage
-
-Simply run the code in your terminal and follow the prompts.
+This is python project. After cloning the repository, run the program in the terminal and follow the prompts.
 
 To win, paper beats rock, rock beats scissors, and scissors beats paper.
 
