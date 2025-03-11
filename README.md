@@ -10,8 +10,6 @@ This is python project. After cloning the repository, run the program in the ter
 
 To win, paper beats rock, rock beats scissors, and scissors beats paper.
 
-## Credits
-
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
