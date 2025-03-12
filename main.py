@@ -63,12 +63,17 @@ def play_game():
                 print("Check input...")
 
     stats = {
-        "wins": wins,
-        "loses": loses,
-        "ties": ties
+        "Wins": wins,
+        "Loses": loses,
+        "Ties": ties
     }
 
-    print(stats)
+    print("*********")
+    for x, y in stats.items():
+
+        print(f"{x}: {y}")
+
+    print("*********")
 
 
 if __name__ == "__main__":
